@@ -1,1 +1,73 @@
-/*  your css code here. If applicable *
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        /* Styling for the main container */
+        .container {
+            max-width: 90%; /* Responsive width */
+            margin: 4rem auto; /* Centered with top margin */
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            text-align: center;
+        }
+        /* Input field styling */
+        input[type="number"] {
+            padding: 0.75rem 1rem;
+            border: 2px solid #cbd5e1; /* Lighter border */
+            border-radius: 0.75rem; /* Rounded input */
+            width: 100%; /* Full width */
+            max-width: 250px; /* Max width for larger screens */
+            font-size: 1rem;
+            margin-bottom: 1.5rem; /* More space below input */
+            transition: border-color 0.3s ease;
+        }
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #3b82f6; /* Blue border on focus */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25); /* Focus ring */
+        }
+        /* Button styling */
+        button {
+            background-color: #4f46e5; /* Deeper purple */
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem; /* Rounded button */
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3); /* Button shadow */
+        }
+        button:hover {
+            background-color: #6366f1; /* Lighter purple on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        button:active {
+            transform: translateY(0); /* Press down effect */
+        }
+        /* Result display */
+        #result {
+            margin-top: 2rem; /* More space above result */
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a202c; /* Darker text */
+        }
+        /* Error message styling */
+        .error {
+            color: #ef4444; /* Red for errors */
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 700px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 800px;
+            }
+        }

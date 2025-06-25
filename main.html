@@ -7,7 +7,17 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<div class="container">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6">Count Trailing Zeros in Factorial</h1>
+        <p class="text-lg text-gray-600 mb-8">
+            Enter a non-negative integer (up to $10^4$) to find the number of trailing zeros in its factorial.
+        </p>
+
+        <div class="flex flex-col items-center">
+            <input type="number" id="numberInput" placeholder="Enter a number (e.g., 10)" min="0" max="10000">
+            <button onclick="calculateTrailingZeros()">Calculate Zeros</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
